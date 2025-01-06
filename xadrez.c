@@ -21,17 +21,17 @@ int main() {
     int casas_rainha = 8, casas_torre = 5;
 
     //Chama função recursiva da rainha
-    printf("Jogada Rainha\n");   
+    printf("Jogada Rainha: 8 casas para esquerda\n");   
     movimento_rainha(casas_rainha);
     printf("\n");
 
     //Chama função recursiva da torre
-    printf("Jogada Torre\n");  
+    printf("Jogada Torre: 5 casas para direita\n");  
     movimento_torre(casas_torre);
     printf("\n");
 
     //Movimento Bispo aninhado
-    printf("Jogada Bispo\n");
+    printf("Jogada Bispo: 5 casas para digonal direita cima\n");
         for (int i = 0; i < 5; i++) {       
             for (int j = 0; j < 1; j++)
         {
@@ -43,7 +43,7 @@ int main() {
     printf("\n");
     
     //Movimento Cavalo com condição multipla + multiplas variáveis
-    printf("Jogada Cavalo\n");
+    printf("Jogada Cavalo: Jogada em ""L"" cima direita\n");
          for (int i = 0, j = 3; i <= 2 && j <= 3; i++, j--) {     
              if (i <= 1 )
         {
